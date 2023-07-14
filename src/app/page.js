@@ -37,12 +37,19 @@ export default function Home() {
             <div className="text-center p-10 py-10">
               <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Muhammad Nabil Azizi</h2>
               <div className="text-2xl py-2 dark:text-white">{TypeEffect()}</div>
-
-              <p className=" dark:text-gray-200 text-md py-5 leading-8 text-gray-800 text-justify">
-                Undergraduate Data Science student at Institut Teknologi Sumatera with a focus on studying data science, data analysis, and artificial intelligence. I have a strong passion for leveraging data-driven insights to solve
-                complex problems. In addition to my academic pursuits, I am also deeply interested in web development, encompassing both the back-end and front-end aspects. I enjoy creating dynamic and user-friendly websites that provide
-                seamless experiences for users. My goal is to combine my data science skills with web development to build interactive and data-driven applications.
-              </p>
+              <div className=" dark:text-gray-200 text-md py-5 leading-8 text-gray-800 text-justify">
+                <p>
+                  As an undergraduate <span className="font-medium text-teal-500">Data Science student</span> at Institut Teknologi Sumatera, my primary focus is on studying 
+                  <span className="font-medium text-teal-500">data science, data analysis, and artificial intelligence.</span> I am deeply passionate about leveraging data-driven insights to solve complex problems.
+                </p>
+                <p className="py-4">
+                  Additionally, I have a strong <span className="font-medium text-teal-500">interest in web development</span>, encompassing both <span className="font-medium text-teal-500">back-end and front-end</span> aspects. I thoroughly enjoy creating dynamic and
+                  user-friendly websites that deliver seamless experiences for users.
+                </p>
+                <p>
+                  My <span className="font-medium text-teal-500">goals</span> is to combine my skills in data science with web development to <span className="font-medium text-teal-500">build interactive and data-driven applications.</span>
+                </p>
+              </div>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/NabilAzizii" target="_blank">
@@ -62,17 +69,17 @@ export default function Home() {
         </section>
         {/*  */}
         <section>
-          <div>
+          <div className='p-10 py-10'>
             <h3 className="text-3xl pt-8 pb- dark:text-white">Experiences</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white text-justify">
-              Since the beginning of my journey as a <span className="text-teal-500">data science student</span> and <span className="text-teal-500">self-taught web developer</span>, I've done with any
-              <span className="text-teal-500"> experiences </span>
+              Since the beginning of my journey as a <span className="font-medium text-teal-500">data science student</span> and <span className="text-teal-500 font-medium">self-taught web developer</span>, I've done with any
+              <span className="text-teal-500 font-medium"> experiences </span>
               Through personal projects, I honed my analytical skills, extracting insights from complex data. Freelance web development projects allowed me to create functional websites that aligned with client needs. As a self-taught
-              person, I invested time in learning new technologies, exploring frameworks, and perfecting <span className="text-teal-500"> front-end and back-end development </span>. Problem-solving and adaptability are my strengths, helping
+              person, I invested time in learning new technologies, exploring frameworks, and perfecting <span className="text-teal-500 font-medium"> front-end and back-end development.</span> Problem-solving and adaptability are my strengths, helping
               me to take on independent challenges. Overall, my diverse experience in data science and web development provides a strong foundation. I am eager to contribute, collaborate, and continue my growth in this field.
             </p>
           </div>
-          <div className="lg:flex gap-10">
+          <div className="lg:flex gap-10 p-10 py-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
               <div className="flex justify-center items-center ">
                 <Image src={bangkit} width={400} height={300} className="rounded-xl hover:shadow-md hover:scale-105 transition-all duration-200" />
@@ -91,7 +98,7 @@ export default function Home() {
           </div>
         </section>
         {/*  */}
-        <section className="py-10">
+        <section className="p-10 py-10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
           </div>
