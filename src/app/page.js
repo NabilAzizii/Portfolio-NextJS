@@ -27,27 +27,31 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" />
               </li>
               <li>
-                <a className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8" href="https://drive.google.com/file/d/1juzlyXhyuB6lM5yhGWJBhbMbBjz5a-7h/view?usp=sharing">
+                <a
+                  className="bg-gradient-to-tl from-[#4334cf] dark:from-[#0083B0] dark:to-[#00B4DB] to-[#c9f28a] text-white px-4 py-2 border-none rounded-md ml-8"
+                  href="https://drive.google.com/file/d/1juzlyXhyuB6lM5yhGWJBhbMbBjz5a-7h/view?usp=sharing"
+                >
                   Resume
                 </a>
               </li>
             </ul>
           </nav>
           <div className="flex flex-col">
-            <div className="text-center p-10 py-10">
-              <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Muhammad Nabil Azizi</h2>
+            <div className="text-center">
+              <h2 className="text-5xl py-2 text-[#4334cf] font-medium md:text-6xl dark:text-[#00B4DB]">Muhammad Nabil Azizi</h2>
               <div className="text-2xl py-2 dark:text-white">{TypeEffect()}</div>
               <div className=" dark:text-gray-200 text-md py-5 leading-8 text-gray-800 text-justify">
                 <p>
-                  As an undergraduate <span className="font-medium text-teal-500">Data Science student</span> at Institut Teknologi Sumatera, my primary focus is on studying 
-                  <span className="font-medium text-teal-500">data science, data analysis, and artificial intelligence.</span> I am deeply passionate about leveraging data-driven insights to solve complex problems.
+                  As an undergraduate <span className="font-medium text-[#4334cf] dark:text-[#00B4DB]">Data Science student</span> at Institut Teknologi Sumatera, my primary focus is on studying
+                  <span className="font-medium text-[#4334cf] dark:text-[#00B4DB]"> data science, data analysis, and artificial intelligence.</span> I am deeply passionate about leveraging data-driven insights to solve complex problems.
                 </p>
                 <p className="py-4">
-                  Additionally, I have a strong <span className="font-medium text-teal-500">interest in web development</span>, encompassing both <span className="font-medium text-teal-500">back-end and front-end</span> aspects. I thoroughly enjoy creating dynamic and
-                  user-friendly websites that deliver seamless experiences for users.
+                  Additionally, I have a strong <span className="font-medium dark:text-[#00B4DB] text-[#4334cf]">interest in web development</span>, encompassing both{' '}
+                  <span className="font-medium dark:text-[#00B4DB] text-[#4334cf]">back-end and front-end</span> aspects. I thoroughly enjoy creating dynamic and user-friendly websites that deliver seamless experiences for users.
                 </p>
                 <p>
-                  My <span className="font-medium text-teal-500">goals</span> is to combine my skills in data science with web development to <span className="font-medium text-teal-500">build interactive and data-driven applications.</span>
+                  My <span className="font-medium dark:text-[#00B4DB] text-[#4334cf]">goals</span> is to combine my skills in data science with web development to{' '}
+                  <span className="dark:text-[#00B4DB] font-medium text-[#4334cf]">build interactive and data-driven applications.</span>
                 </p>
               </div>
             </div>
@@ -62,25 +66,49 @@ export default function Home() {
                 <AiFillInstagram />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-800 to-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 hover:scale-105 transition-all duration-200">
+            <div className="mx-auto bg-gradient-to-b from-[#4334cf] to-[#c9f28a] dark:from-[#0083B0] dark:to-transparent rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 md:hover:scale-120 transition-all duration-200 hover:scale-110">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
         {/*  */}
         <section>
-          <div className='p-10 py-10'>
+          <div className="w-full py-16 text-white bg-[#c9f28a] dark:bg-[#00B4DB] rounded-lg mt-20">
+            <div className="max-w-[1240px] px-4 mx-auto grid lg:grid-cols-3">
+              <div className="lg:col-span-2 my-4">
+                <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-gray-800 dark:text-white">Let's get in touch</h1>
+                <p className="text-gray-800 dark:text-white">Got a question or just want to say hello? Go ahead.</p>
+              </div>
+              <div className="my-4">
+                <div className="flex flex-col sm:flex-row items-center justify-between w-full">
+                  <input className="p-3 flex w-full rounded-md text-black" type="email" placeholder="Enter Email" />
+                  <button className="bg-gradient-to-r from-[#4334cf] to-[#c9f28a] text-white rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3 dark:from-[#0083B0] dark:to-[#00B4DB] hover:scale-105 transition-all duration-200">
+                    Notify Me
+                  </button>
+                </div>
+                <p className="text-gray-800 dark:text-white">
+                  We care bout the protection of your data. Read our <span className="text-[#4334cf] dark:text-[#0083B0]">Privacy Policy.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*  */}
+        <section>
+          <div>
             <h3 className="text-3xl pt-8 pb- dark:text-white">Experiences</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white text-justify">
-              Since the beginning of my journey as a <span className="font-medium text-teal-500">data science student</span> and <span className="text-teal-500 font-medium">self-taught web developer</span>, I've done with any
-              <span className="text-teal-500 font-medium"> experiences </span>
+              Since the beginning of my journey as a <span className="dark:text-[#00B4DB] font-medium text-[#4334cf]">data science student</span> and{' '}
+              <span className="text-[#4334cf] dark:text-[#00B4DB] font-medium">self-taught web developer</span>, I've done with any
+              <span className="text-[#4334cf] dark:text-[#00B4DB] font-medium"> experiences </span>
               Through personal projects, I honed my analytical skills, extracting insights from complex data. Freelance web development projects allowed me to create functional websites that aligned with client needs. As a self-taught
-              person, I invested time in learning new technologies, exploring frameworks, and perfecting <span className="text-teal-500 font-medium"> front-end and back-end development.</span> Problem-solving and adaptability are my strengths, helping
-              me to take on independent challenges. Overall, my diverse experience in data science and web development provides a strong foundation. I am eager to contribute, collaborate, and continue my growth in this field.
+              person, I invested time in learning new technologies, exploring frameworks, and perfecting <span className="dark:text-[#00B4DB] text-[#4334cf] font-medium"> front-end and back-end development.</span> Problem-solving and
+              adaptability are my strengths, helping me to take on independent challenges. Overall, my diverse experience in data science and web development provides a strong foundation. I am eager to contribute, collaborate, and continue
+              my growth in this field.
             </p>
           </div>
-          <div className="lg:flex gap-10 p-10 py-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg py-10 px-5 rounded-xl my-10 flex-1 dark:bg-white">
               <div className="flex justify-center items-center ">
                 <Image src={bangkit} width={400} height={300} className="rounded-xl hover:shadow-md hover:scale-105 transition-all duration-200" />
               </div>
@@ -90,7 +118,7 @@ export default function Home() {
                 <li className="py-2">Confronting a technical challenge in the development of a cloud-based application or system and successfully overcoming the problem by using the knowledge and skills acquired.</li>
                 <li className="py-2">Participated in a capstone project with team members. In this project, I handled the Back-end part for an Application where I created and handled the API creation for my team's Project Application.</li>
               </ul>
-              <h4 className="py-4 text-teal-600">What I've Learned</h4>
+              <h4 className="py-4 text-[#4334cf]">What I've Learned</h4>
               <p className="text-gray-800 py-1 font-bold">Google Cloud Platforms</p>
               <p className="text-gray-800 py-1 font-bold">Back-end Developer</p>
               <p className="text-gray-800 py-1 font-bold">Teamwork</p>
@@ -98,12 +126,12 @@ export default function Home() {
           </div>
         </section>
         {/*  */}
-        <section className="p-10 py-10">
+        <section className="">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
           </div>
           <div className="lg:flex gap-10 ">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
+            <div className="text-center shadow-lg py-10 px-5 rounded-xl my-10 flex-1 dark:bg-white">
               <div className="flex justify-center items-center ">
                 <Image src={web1} width={400} height={300} className="rounded-xl hover:shadow-md hover:scale-105 transition-all duration-200" />
               </div>
@@ -117,21 +145,24 @@ export default function Home() {
                 Monitoring Cloud services on Google Cloud Platform.
                 <br /> Creating Machine Learning API for Application.
               </p>
-              <h4 className="pt-4 text-teal-600">Tools I've Use</h4>
+              <h4 className="pt-4 text-[#4334cf]">Tools I've Use</h4>
               <p className="text-gray-800 py-1 font-bold">Google Cloud Platforms</p>
               <p className="text-gray-800 py-1 font-bold">Node Js</p>
               <p className="text-gray-800 py-1 font-bold">Flask Python</p>
               <div className="py-4 hover:scale-105 transition-all duration-200">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white border-none rounded-md px-4 py-2 font-bold hover:shadow-md transition-all duration-200"
+                  className="bg-gradient-to-tl from-[#4334cf] to-[#c9f28a] dark:from-[#0083B0] dark:to-[#00B4DB] text-white border-none rounded-md px-4 py-2 font-medium hover:shadow-md transition-all duration-200"
                   href="https://github.com/yunama47/CapstoneTeamC23-PC621"
                   target="_blank"
                 >
-                  Go to Code
+                  Code
                 </a>
               </div>
             </div>
           </div>
+        </section>
+        <section className=" flex justify-center items-center">
+          <div className="container mx-auto px-6 pt-10 pb-6 text-center dark:text-white"> Made by ❤ Muhammad Nabil Azizi</div>
         </section>
       </main>
     </div>

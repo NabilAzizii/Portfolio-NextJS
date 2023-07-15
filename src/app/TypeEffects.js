@@ -10,7 +10,7 @@ const TypeEffect = () => {
         loop: true,
       }}
       onInit={(typewriter) => {
-        typewriter.typeString(strings[0]).pauseFor(4000).deleteAll().pauseFor(2000).typeString(strings[1]).pauseFor(4000).deleteAll().pauseFor(2000).start();
+        typewriter.typeString(strings[0]).pauseFor(4000).deleteAll().pauseFor(2000).typeString(strings[1]).pauseFor(4000).deleteAll().pauseFor(2000).typeString(strings[2]).pauseFor(4000).deleteAll().pauseFor(2000).start();
       }}
     />
   );
