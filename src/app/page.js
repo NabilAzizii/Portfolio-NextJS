@@ -20,23 +20,26 @@ export default function Home() {
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="text-xl">My Portfolio.</h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" />
-              </li>
-              <li>
-                <a
-                  className="bg-gradient-to-tl from-[#4334cf] dark:from-[#0083B0] dark:to-[#00B4DB] to-[#c9f28a] text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1juzlyXhyuB6lM5yhGWJBhbMbBjz5a-7h/view?usp=sharing"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
+          <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 dark:text-white">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <h1 className="text-xl">My Portfolio.</h1>
+              <ul className="flex items-center">
+                <li>
+                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" />
+                </li>
+                <li>
+                  <a
+                    className="bg-gradient-to-tl from-[#4334cf] dark:from-[#0083B0] dark:to-[#00B4DB] to-[#c9f28a] text-white px-4 py-2 border-none rounded-md ml-8"
+                    href="https://drive.google.com/file/d/1juzlyXhyuB6lM5yhGWJBhbMbBjz5a-7h/view?usp=sharing"
+                  >
+                    Resume
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
-          <div className="flex flex-col">
+
+          <div className="py-24 flex flex-col">
             <div className="text-center">
               <h2 className="text-5xl py-2 text-[#4334cf] font-medium md:text-6xl dark:text-[#00B4DB]">Muhammad Nabil Azizi</h2>
               <div className="text-2xl py-2 dark:text-white">{TypeEffect()}</div>
