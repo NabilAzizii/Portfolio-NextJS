@@ -5,7 +5,8 @@ import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
 import Image from 'next/image';
 import deved from '../../public/Layer.png';
 import bangkit from '../../public/bangkit.jpg';
-import web1 from '../../public/MyKIP.png';
+import mykip from '../../public/MyKIP.png';
+import jobless from '../../public/jobless.png';
 import TypeEffect from './TypeEffects';
 import { useState } from 'react';
 
@@ -19,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="./favicon.ico" />
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className="min-h-screen">
+        <section className="min-h-screen max-w-screen-xl mx-auto">
           <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 dark:text-white">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <h1 className="text-xl">My Portfolio.</h1>
@@ -73,51 +74,32 @@ export default function Home() {
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
           </div>
-        </section>
-        {/*  */}
-        <section>
-          <div className="w-full py-16 text-white bg-[#c9f28a] dark:bg-[#00B4DB] rounded-lg mt-20">
-            <div className="max-w-[1240px] px-4 mx-auto grid lg:grid-cols-3">
-              <div className="lg:col-span-2 my-4">
-                <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-gray-800 dark:text-white">Let's get in touch</h1>
-                <p className="text-gray-800 dark:text-white">Got a question or just want to say hello? Go ahead.</p>
-              </div>
-              <div className="my-4">
-                <div className="flex flex-col sm:flex-row items-center justify-between w-full">
-                  <input className="p-3 flex w-full rounded-md text-black" type="email" placeholder="Enter Email" />
-                  <button className="bg-gradient-to-r from-[#4334cf] to-[#c9f28a] text-white rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3 dark:from-[#0083B0] dark:to-[#00B4DB] hover:scale-105 transition-all duration-200">
-                    Notify Me
-                  </button>
-                </div>
-                <p className="text-gray-800 dark:text-white">
-                  We care bout the protection of your data. Read our <span className="text-[#4334cf] dark:text-[#0083B0]">Privacy Policy.</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/*  */}
-        <section>
+
+          {/*  */}
+
           <div>
-            <h3 className="text-3xl pt-8 pb- dark:text-white">Experiences</h3>
+            <h3 className="text-3xl pt-8 pb-2 dark:text-white">Experiences</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white text-justify">
               Since the beginning of my journey as a <span className="dark:text-[#00B4DB] font-medium text-[#4334cf]">data science student</span> and{' '}
               <span className="text-[#4334cf] dark:text-[#00B4DB] font-medium">self-taught web developer</span>, I've done with any
               <span className="text-[#4334cf] dark:text-[#00B4DB] font-medium"> experiences </span>
               Through personal projects, I honed my analytical skills, extracting insights from complex data. Freelance web development projects allowed me to create functional websites that aligned with client needs. As a self-taught
-              person, I invested time in learning new technologies, exploring frameworks, and perfecting <span className="dark:text-[#00B4DB] text-[#4334cf] font-medium"> front-end and back-end development.</span> Problem-solving and
-              adaptability are my strengths, helping me to take on independent challenges. Overall, my diverse experience in data science and web development provides a strong foundation. I am eager to contribute, collaborate, and continue
-              my growth in this field.
+              person, I invested time in learning new technologies, exploring frameworks, and perfecting <span className="dark:text-[#00B4DB] text-[#4334cf] font-medium"> front-end and back-end development.</span>{' '}
+              <span className="text-[#4334cf] dark:text-[#00B4DB] font-medium">Problem-solving and adaptability are my strengths</span>, helping me to take on independent challenges. Overall, my diverse experience in data science and web
+              development provides a strong foundation. I am eager to contribute, collaborate, and continue my growth in this field.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg py-10 px-5 rounded-xl my-10 flex-1 dark:bg-white">
+            <div className="text-center shadow-lg py-10 lg:px-24 px-5 rounded-xl my-10 flex-1 dark:bg-[#fffffe]">
               <div className="flex justify-center items-center ">
-                <Image src={bangkit} width={400} height={300} className="rounded-xl hover:shadow-md hover:scale-105 transition-all duration-200" />
+                <a href="https://grow.google/intl/id_id/bangkit/?tab=machine-learning" target="_blank">
+                  <Image src={bangkit} width={400} height={300} className="rounded-xl hover:shadow-md hover:scale-105 transition-all duration-200" />
+                </a>
               </div>
-              <h3 className="text-lg font-medium pt-8 pb-2">Cloud Computing Cohort</h3>
+              <h3 className="text-lg font-bold pt-8 pb-2">Bangkit Academy 2023 By Google, GoTo, Traveloka</h3>
+              <h3 className="text-lg font-medium pt-4 pb-2">Cloud Computing Cohort</h3>
               <ul className="py-2 text-justify">
-                <li className="py-2 ">Learn and practice the use of various leading cloud platforms, such as Google Cloud Platform</li>
+                <li className="py-2">Learn and practice the use of various leading cloud platforms, such as Google Cloud Platform</li>
                 <li className="py-2">Confronting a technical challenge in the development of a cloud-based application or system and successfully overcoming the problem by using the knowledge and skills acquired.</li>
                 <li className="py-2">Participated in a capstone project with team members. In this project, I handled the Back-end part for an Application where I created and handled the API creation for my team's Project Application.</li>
               </ul>
@@ -125,45 +107,87 @@ export default function Home() {
               <p className="text-gray-800 py-1 font-bold">Google Cloud Platforms</p>
               <p className="text-gray-800 py-1 font-bold">Back-end Developer</p>
               <p className="text-gray-800 py-1 font-bold">Teamwork</p>
+              <div className="max-w-screen-sm mx-auto">
+                <div>
+                  <h3 className="text-3xl pt-8">Project on Bangkit</h3>
+                  <hr className="border-gray-300 mt-1" />
+                </div>
+                <div className="lg:flex gap-10">
+                  <div className="text-center lg:shadow-lg py-5 px-5 rounded-xl my-10 flex-1 dark:bg-white">
+                    <div className="flex justify-center items-center ">
+                      <Image src={mykip} width={400} height={300} className="rounded-xl hover:shadow-md hover:scale-105 transition-all duration-200" />
+                    </div>
+                    <h3 className="text-lg font-medium pt-8 pb-2">MyKIP</h3>
+                    <p className="text-md py-2 leading-8 text-gray-800 text-justify">
+                      Project MyKIP is aimed at assisting high school graduates who are interested in applying for the KIP (Kartu Indonesia Pintar) scholarship program or individuals responsible for managing the KIP program. The project
+                      focuses on creating a platform that ensures the effective and targeted distribution of the KIP scholarships.
+                    </p>
+                    <p className="py-2">
+                      Create API/Backend for Application. <br />
+                      Monitoring Cloud services on Google Cloud Platform.
+                      <br /> Creating Machine Learning API for Application.
+                    </p>
+                    <h4 className="pt-4 text-[#4334cf]">Tools I've Use</h4>
+                    <p className="text-gray-800 py-1 font-bold">Google Cloud Platforms</p>
+                    <p className="text-gray-800 py-1 font-bold">Node Js</p>
+                    <p className="text-gray-800 py-1 font-bold">Flask Python</p>
+                    <div className="py-4 hover:scale-105 transition-all duration-200">
+                      <a
+                        className="bg-gradient-to-tl from-[#4334cf] to-[#c9f28a] dark:from-[#0083B0] dark:to-[#00B4DB] text-white border-none rounded-md px-4 py-2 font-medium hover:shadow-md transition-all duration-200"
+                        href="https://github.com/yunama47/CapstoneTeamC23-PC621"
+                        target="_blank"
+                      >
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-        {/*  */}
-        <section className="">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
+            <h3 className="text-3xl pt-8 pb-2 dark:text-white">Projects</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white text-justify">
+              As a <span className="text-[#4334cf] dark:text-[#00B4DB] font-medium"> Jr.Web Developer </span>(Front-end and Back-end), during these projects, I always strive to continuously improve my expertise in the latest technologies
+              and web development best practices. I also actively share my knowledge, and seek feedback to continuously improve the quality of the products we produce.
+            </p>
           </div>
-          <div className="lg:flex gap-10 ">
-            <div className="text-center shadow-lg py-10 px-5 rounded-xl my-10 flex-1 dark:bg-white">
+          <div className="lg:flex justify-center gap-10">
+            <div className="text-center shadow-lg py-5 lg:max-w-[50%] px-5 rounded-xl my-10 flex-1 dark:bg-white">
               <div className="flex justify-center items-center ">
-                <Image src={web1} width={400} height={300} className="rounded-xl hover:shadow-md hover:scale-105 transition-all duration-200" />
+                <Image src={jobless} width={400} height={300} className="rounded-xl hover:shadow-md hover:scale-105 transition-all duration-200" />
               </div>
-              <h3 className="text-lg font-medium pt-8 pb-2">MyKIP</h3>
-              <p className="text-md py-2 leading-8 text-gray-800 text-justify">
-                Project MyKIP is aimed at assisting high school graduates who are interested in applying for the KIP (Kartu Indonesia Pintar) scholarship program or individuals responsible for managing the KIP program. The project focuses
-                on creating a platform that ensures the effective and targeted distribution of the KIP scholarships.
-              </p>
-              <p className="py-2">
-                Create API/Backend for Application. <br />
-                Monitoring Cloud services on Google Cloud Platform.
-                <br /> Creating Machine Learning API for Application.
-              </p>
+              <h3 className="text-lg  font-medium pt-8 pb-2">Landing Page</h3>
               <h4 className="pt-4 text-[#4334cf]">Tools I've Use</h4>
-              <p className="text-gray-800 py-1 font-bold">Google Cloud Platforms</p>
-              <p className="text-gray-800 py-1 font-bold">Node Js</p>
-              <p className="text-gray-800 py-1 font-bold">Flask Python</p>
-              <div className="py-4 hover:scale-105 transition-all duration-200">
-                <a
-                  className="bg-gradient-to-tl from-[#4334cf] to-[#c9f28a] dark:from-[#0083B0] dark:to-[#00B4DB] text-white border-none rounded-md px-4 py-2 font-medium hover:shadow-md transition-all duration-200"
-                  href="https://github.com/yunama47/CapstoneTeamC23-PC621"
-                  target="_blank"
-                >
-                  Code
-                </a>
+              <p className="text-gray-800 py-1 font-bold">HTML</p>
+              <p className="text-gray-800 py-1 font-bold">CSS</p>
+              <p className="text-gray-800 py-1 font-bold">Figma</p>
+              <div className="flex justify-center items-center  gap-8">
+                <div className="py-5 hover:scale-105 transition-all duration-200">
+                  <a
+                    className="bg-gradient-to-tl from-[#4334cf] to-[#c9f28a] dark:from-[#0083B0] dark:to-[#00B4DB] text-white border-none rounded-md px-4 py-2 font-medium hover:shadow-md transition-all duration-200"
+                    href="https://github.com/NabilAzizii/Latihan-Frontend/tree/landing-page-jobless"
+                    target="_blank"
+                  >
+                    Code
+                  </a>
+                </div>
+                <div className="py-4 hover:scale-105 transition-all duration-200">
+                  <a
+                    className="bg-gradient-to-tl from-[#4334cf] to-[#c9f28a] dark:from-[#0083B0] dark:to-[#00B4DB] text-white border-none rounded-md px-4 py-2 font-medium hover:shadow-md transition-all duration-200"
+                    href="https://jobless-nabilazizi.netlify.app/"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+        {/*  */}
+
         <section className=" flex justify-center items-center">
           <div className="container mx-auto px-6 pt-10 pb-6 text-center dark:text-white"> Made by ❤ Muhammad Nabil Azizi</div>
         </section>
