@@ -157,7 +157,8 @@ export default function Home() {
               <div className="flex justify-center items-center ">
                 <Image src={jobless} width={400} height={300} className="rounded-xl hover:shadow-md hover:scale-105 transition-all duration-200" />
               </div>
-              <h3 className="text-lg  font-medium pt-8 pb-2">Landing Page</h3>
+              <h3 className="text-lg  font-medium pt-8 pb-2">Landing Page (Desktop Only)</h3>
+              <p className="lg:text-base text-xs py-2 leading-8 text-gray-800 italic ">*Doesn't work on devices other than desktop</p>
               <h4 className="pt-4 text-[#4334cf]">Tools I've Use</h4>
               <p className="text-gray-800 py-1 font-bold">HTML</p>
               <p className="text-gray-800 py-1 font-bold">CSS</p>
